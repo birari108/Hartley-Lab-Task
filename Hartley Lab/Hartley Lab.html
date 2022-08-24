@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper's Links -->
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+      /* === Google Font Import - Poppins === */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      .btnContact {
+        background-color: #ff5043;
+        border-radius: 0px;
+        margin-top: -7px;
+        margin-right: -11px;
+        padding: 16px;
+        margin-bottom: -8px;
+      }
+      .banner {
+        background-color: #000000;
+        height: 700px;
+      }
+      .banner-img {
+        height: 300px;
+        width: 400px;
+        margin-top: 32%;
+        padding: 20px;
+      }
+
+      .banner-text {
+        margin-top: 170px;
+        margin-left: 60px;
+        padding: 20px;
+        color: white;
+      }
+
+      .banner-text h1 {
+        font-size: 60px;
+        font-weight: 700;
+      }
+
+      .global {
+        height: 700px;
+        background-color: white;
+      }
+      .global-img img {
+        height: 500px;
+        width: 500px;
+        margin-top: 120px;
+      }
+      .global-usa img {
+        height: 700px;
+        width: 100px;
+        margin-left: 45px;
+      }
+      .global-text {
+        padding: 40px;
+        margin-top: 120px;
+        line-height: 30px;
+      }
+      .global-text h1 {
+        font-size: 50px;
+      }
+
+      .services {
+        height: 875px;
+        background-color: #f5f5f7;
+      }
+      .services-update {
+        height: 1250px;
+        background-color: #fffcdf;
+      }
+      .services-outer-div {
+        padding: 130px 60px;
+      }
+      .services-inner-div span {
+        font-size: 30px;
+      }
+      .services-design-left p {
+        padding-right: 50px;
+      }
+      .services-design-left-option {
+        background-color: #fff9c3;
+      }
+      .services-design-right {
+        padding: 50px;
+      }
+      .services-design-left {
+        padding: 50px;
+      }
+      .services-design-right {
+        padding: 50px;
+      }
+
+      .industries {
+        height: 640px;
+      }
+      .industries-text {
+        margin-top: 115px;
+        margin-left: 46px;
+        margin-bottom: 25px;
+      }
+
+      .conference {
+        height: 470px;
+        /* background-attachment: fixed; */
+        background-size: cover;
+        background-image: url("assate/homepage-img/Conference 1.png");
+      }
+      .conference-block {
+        height: 450px;
+        width: 970px;
+        border-radius: 24px;
+        background-color: #f5f5f7;
+        margin-top: 250px;
+        margin-left: 300px;
+        padding: 60px;
+      }
+      .conference-block-quote {
+        margin-left: 405px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding-left: 4px;
+        color: #f5f5f7;
+        background-color: #ff5043;
+      }
+      .conference-block img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 405px;
+      }
+
+      .conference-block h2 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .conference-block p {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .conference-block-info {
+        height: 30px;
+      }
+
+      .clients {
+        padding: 86px;
+        margin-top: 255px;
+      }
+      .clients-text {
+        text-align: center;
+      }
+      .clients-img {
+        height: 230px;
+        margin-top: 65px;
+      }
+      .clients-img-logo img {
+        height: 70px;
+        width: 185px;
+        float: left;
+        margin: 19px;
+      }
+
+      .careers {
+        background-color: #f5f5f7;
+        padding: 70px;
+      }
+      .careers-text {
+        padding: 85px;
+      }
+
+      .blog {
+        padding: 100px;
+      }
+      .blog-text {
+        margin-bottom: 70px;
+      }
+      .blog-text-img-s1 {
+        height: 700px;
+        width: 700px;
+        padding: 40px;
+        padding-top: 490px;
+        border-radius: 24px;
+        color: #f5f5f7;
+        background-size: cover;
+        background-image: url("assate/homepage-img/blog-s1.jpg") !important;
+      }
+      details > summary {
+        list-style: none;
+      }
+      .blog-text-img-s2 {
+        height: 337px;
+        width: 570px;
+        border-radius: 24px;
+        background-color: #f5f5f7;
+      }
+      .blog-text-img-s3 {
+        height: 337px;
+        width: 570px;
+        border-radius: 24px;
+        margin-top: 25px;
+        background-color: #f5f5f7;
+      }
+      .blog-text-img-s2-text {
+        padding: 30px;
+        margin-top: 50px;
+      }
+      .blog-text-img-s3-text {
+        padding: 30px;
+        margin-top: 50px;
+      }
+
+      .our-work {
+        height: 900px;
+        color: white;
+        padding-top: 400px;
+        text-align: center;
+        background-size: cover;
+        background-image: url("assate/homepage-img/Our-Work.png");
+      }
+      .our-work p {
+        font-size: 20px;
+      }
+      .our-work h1 {
+        font-size: 70px;
+      }
+
+      .footer a {
+        text-decoration: none;
+        font-size: 15px;
+      }
+      /* Swiper CSS */
+      .swiper {
+        width: 1200px;
+      }
+
+      .card {
+        position: relative;
+        background: #fff;
+        border-radius: 24px;
+        margin: 20px 0;
+        background-color: #f5f5f7;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        height: 40%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .card .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        position: relative;
+        z-index: 100;
+      }
+
+      section .card .image {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        padding: 3px;
+      }
+
+      section .card .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .card .media-icons {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card .media-icons i {
+        color: #fff;
+        opacity: 0.6;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .card .media-icons i:hover {
+        opacity: 1;
+      }
+
+      .card .name-profession {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+      }
+
+      .name-profession .name {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .name-profession .profession {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .card .rating {
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+      }
+
+      .card .rating i {
+        font-size: 18px;
+        margin: 0 2px;
+        color: #ff5043;
+      }
+
+      .card .button {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .card .button button {
+        background: #ff5043;
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 8px 22px;
+        border-radius: 20px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .button button:hover {
+        background: #ff5043;
+      }
+
+      .swiper-pagination {
+        position: absolute;
+      }
+
+      .swiper-pagination-bullet {
+        height: 7px;
+        width: 26px;
+        border-radius: 25px;
+        background: #ff5043;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        opacity: 0.7;
+        color: #ff5043;
+        transition: all 0.3s ease;
+      }
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        opacity: 1;
+        color: #ff5043;
+      }
+    </style>
+  </head>
+  <body>
+    <div class=".container">
+      <div>
+        <section>
+          <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <div class="container-fluid">
+                <span
+                  class="navbar-toggler-icon"
+                  style="margin-left: 20px"
+                ></span>
+                <a class="navbar-brand" href="#"
+                  ><img src="assate/icon-logo/Logo-Beta.svg"
+                /></a>
+                <div class="btnContact btn btn-danger">CONTACT US</div>
+              </div>
+            </nav>
+          </div>
+        </section>
+
+        <section>
+          <div class="banner">
+            <div class="container">
+              <div class="row">
+                <div class="col-7">
+                  <div class="banner-text">
+                    <h1>
+                      Timeless products, great
+                      <span style="color: #ff5043">brands.</span>
+                    </h1>
+                    <br />
+                    <br />
+                    <p>
+                      We craft outstanding direct-to-consumer brands with the
+                      common ambition to offer true craftsmanship, timeless
+                      products that are carbon neutral – and this without ever
+                      making any concessions.
+                    </p>
+                    <br />
+                    <br />
+                    <h5>DISCOVER OUR WORK</h5>
+                    <div class="row">
+                      <div
+                        style="
+                          height: 3px;
+                          width: 40px;
+                          background-color: #ff5043;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 0.5px;
+                          width: 190px;
+                          margin-top: 0.5px;
+                          background-color: white;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="banner-img">
+                    <img src="assate/homepage-img/banner.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="global">
+            <div class="container">
+              <div class="row">
+                <div class="col-5">
+                  <div class="global-img">
+                    <img src="assate/homepage-img/global.png" />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="global-usa">
+                    <img src="assate/homepage-img/global.-USA.png" />
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="global-text">
+                    <h6>WHO WE ARE</h6>
+                    <h1>
+                      We are local, yet
+                      <span style="color: #ff5043">brands.</span>
+                    </h1>
+                    <br />
+                    <p>
+                      Betacraft is a trusted global Digital Product Engineering
+                      and Enterprise Modernization company. We integrate
+                      experience design, complex engineering and domain
+                      expertise to help our clients envision what’s possible and
+                      accelerate their transition into tomorrow’s digital
+                      businesses."
+                    </p>
+                    <br />
+                    <h5>DISCOVER MORE</h5>
+                    <div class="row">
+                      <div
+                        style="
+                          height: 3px;
+                          width: 40px;
+                          background-color: #ff5043;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          height: 0.5px;
+                          width: 190px;
+                          margin-top: 1.4px;
+                          background-color: black;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="services" id="services1">
+            <div class="container">
+              <div>
+                <script>
+                  function logo() {
+                    var changelogo = document.getElementById("logo1");
+
+                    if (changelogo.className == "bi bi-plus") {
+                      changelogo.className = "bi bi-x";
+                    } else {
+                      changelogo.className = "bi bi-plus";
+                    }
+                  }
+
+                  function abc() {
+                    var changeWidth = document.getElementById("services1");
+
+                    if (changeWidth.className == "services") {
+                      changeWidth.className = "services-update";
+                    } else {
+                      changeWidth.className = "services";
+                    }
+                  }
+                </script>
+              </div>
+              <div class="services-outer-div">
+                <div class="col">
+                  <h6>SERVICES</h6>
+                  <br />
+                  <h1>
+                    Getting <span style="color: #ff5043">started</span> with us
+                  </h1>
+                </div>
+                <br />
+                <div class="col">
+                  <div class="services-inner-div">
+                    <hr />
+                    <details>
+                      <summary onclick="abc(), logo()">
+                        <div>
+                          <div class="row" style="color: #23293c">
+                            <div class="col-auto me-auto">
+                              <h3>Design & Innovation</h3>
+                            </div>
+                            <div class="col-auto">
+                              <span><i class="bi bi-plus" id="logo1"></i></span>
+                            </div>
+                          </div>
+                        </div>
+                      </summary>
+                      <div class="services-design">
+                        <div class="textdetail">
+                          <div class="row">
+                            <div class="col-8 services-design-left">
+                              <p class="margin-bottom">
+                                Betacraft is a trusted global Digital Product
+                                Engineering and Enterprise Modernization
+                                company. We integrate experience design, complex
+                                engineering and domain expertise to help our
+                                clients envision what’s possible and accelerate
+                                their transition into tomorrow’s digital
+                                businesses."
+                              </p>
+                              <br />
+                              <br />
+                              <div class="services-design-left-option"></div>
+                              <div class="row">
+                                <div
+                                  class="col-5 p-2 m-2 services-design-left-option"
+                                >
+                                  Design Research
+                                </div>
+                                <div
+                                  class="col-5 p-2 m-2 services-design-left-option"
+                                >
+                                  Product Design Sprints
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div
+                                  class="col-5 p-2 m-2 services-design-left-option"
+                                >
+                                  UX/UI Design
+                                </div>
+                                <div
+                                  class="col-5 p-2 m-2 services-design-left-option"
+                                >
+                                  Investment Pitch Package
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div
+                                  class="col-5 p-2 m-2 services-design-left-option"
+                                >
+                                  Sales Pitch Package
+                                </div>
+                                <!-- <div class="col-5 p-2 m-2 services-design-left-option"></div> -->
+                              </div>
+                            </div>
+                            <div class="col-4 services-design-right">
+                              <img src="assate/homepage-img/design.png" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </details>
+                    <hr />
+                    <div>
+                      <div class="row">
+                        <div class="col-auto me-auto">
+                          <h3>Digital Product Engineering</h3>
+                        </div>
+                        <div class="col-auto">
+                          <button
+                            style="border: none; background-color: transparent"
+                          >
+                            <span id="services-inner-plus"
+                              ><i class="bi bi-plus"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div>
+                      <div class="row">
+                        <div class="col-auto me-auto">
+                          <h3>Cloud Adoptation Services</h3>
+                        </div>
+                        <div class="col-auto">
+                          <button
+                            style="border: none; background-color: transparent"
+                          >
+                            <span id="services-inner-plus"
+                              ><i class="bi bi-plus"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div>
+                      <div class="row">
+                        <div class="col-auto me-auto">
+                          <h3>Data Analytics</h3>
+                        </div>
+                        <div class="col-auto">
+                          <button
+                            style="border: none; background-color: transparent"
+                          >
+                            <span id="services-inner-plus"
+                              ><i class="bi bi-plus"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                    <div>
+                      <div class="row">
+                        <div class="col-auto me-auto">
+                          <h3>Digital Marketing Studio</h3>
+                        </div>
+                        <div class="col-auto">
+                          <button
+                            style="border: none; background-color: transparent"
+                          >
+                            <span id="services-inner-plus"
+                              ><i class="bi bi-plus"></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="industries">
+            <div class="container">
+              <div class="industries-inner">
+                <div class="industries-text">
+                  <h5>INDUSTRIES</h5>
+                  <br />
+                  <h1>
+                    Our <span style="color: #ff5043">expertise</span> and
+                    solutions
+                  </h1>
+                </div>
+                <div class="industries-card">
+                  <section>
+                    <div class="swiper mySwiper container">
+                      <div class="swiper-wrapper content">
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img
+                                src="assate/icon-logo/Blockchain.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"><h4>Blockchain</h4></span>
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img
+                                src="assate/icon-logo/Travel & Hospitality.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"
+                                ><h4>Travel & Hospitality</h4></span
+                              >
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img
+                                src="assate/icon-logo/Manufacturing.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"><h4>Manufacturing</h4></span>
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img
+                                src="assate/icon-logo/Electric Vehicle.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"
+                                ><h4>Electric Vehicle</h4></span
+                              >
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img src="assate/icon-logo/Location.png" alt="" />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"><h4>Location</h4></span>
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img
+                                src="assate/icon-logo/Education.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"><h4>Education</h4></span>
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img src="assate/icon-logo/Email.png" alt="" />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"><h4>Email</h4></span>
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide card">
+                          <div class="card-content">
+                            <div class="image">
+                              <img
+                                src="assate/icon-logo/Blockchain.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="name-profession">
+                              <span class="name"><h4>Blockchain</h4></span>
+                              <br />
+                              <span class="profession"
+                                ><p>
+                                  It is a long established fact that a reader
+                                  will be distracted by the readable content
+                                </p></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </section>
+
+                  <!-- Swiper JS -->
+                  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                  <!-- Initialize Swiper -->
+                  <script>
+                    var swiper = new Swiper(".mySwiper", {
+                      slidesPerView: 4,
+                      spaceBetween: 30,
+                      slidesPerGroup: 4,
+                      loop: true,
+                      loopFillGroupWithBlank: true,
+                      pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                      },
+                    });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="conference">
+            <br />
+            <div class="conference-block">
+              <div class="conference-block-quote">
+                <h1 style="align-items: center"><i class="bi bi-quote"></i></h1>
+              </div>
+              <div>
+                <h2>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </h2>
+                <br />
+                <img src="assate/homepage-img/Bill Gust.jpg" />
+                <br />
+                <p>- Bill Gust, CEO and President</p>
+                <div class="conference-block-info">
+                  <div class="row">
+                    <div class="col-2"><p>02 ---- 08</p></div>
+                    <div class="col-2"></div>
+                    <div class="col-4" style="color: #ff5043">
+                      <p>
+                        <i class="bi bi-play-circle"></i> View Success Story
+                      </p>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                      <p>
+                        <i class="bi bi-arrow-left"></i
+                        ><span style="margin-left: 30px"></span
+                        ><i class="bi bi-arrow-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="clients">
+              <div class="clients-text">
+                <p>OUR GLOBAL REACH</p>
+                <h1>
+                  Our clients <span style="color: #ff5043">love</span> us, you
+                  will love too.
+                </h1>
+              </div>
+              <div class="clients-img">
+                <div class="clients-img-logo">
+                  <img src="assate/icon-logo/google-logo.png" />
+                  <img src="assate/icon-logo/blueyonder-logo.png" />
+                  <img src="assate/icon-logo/infosys-logo.png" />
+                  <img src="assate/icon-logo/nttdata-logo.png" />
+                  <img src="assate/icon-logo/datametica-logo.png" />
+                </div>
+                <div class="clients-img-logo">
+                  <img src="assate/icon-logo/nttdata-logo.png" />
+                  <img src="assate/icon-logo/infosys-logo.png" />
+                  <img src="assate/icon-logo/datametica-logo.png" />
+                  <img src="assate/icon-logo/google-logo.png" />
+                  <img src="assate/icon-logo/blueyonder-logo.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="careers">
+            <div class="container">
+              <div class="row">
+                <div class="col-7">
+                  <div class="careers-text">
+                    <p>CAREERS</p>
+                    <h2>
+                      Join our
+                      <span style="color: #ff5043">team</span>
+                    </h2>
+                    <br />
+                    <div class="careers-text-option">
+                      <hr />
+                      <div>
+                        <div class="row" style="color: #23293c">
+                          <div class="col-auto me-auto">
+                            <h4>Benefits</h4>
+                          </div>
+                          <div class="col-auto">
+                            <button
+                              style="
+                                border: none;
+                                background-color: transparent;
+                              "
+                            >
+                              <h2><i class="bi bi-plus"></i></h2>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div>
+                        <div class="row" style="color: #23293c">
+                          <div class="col-auto me-auto">
+                            <h4>Interview Process</h4>
+                          </div>
+                          <div class="col-auto">
+                            <button
+                              style="
+                                border: none;
+                                background-color: transparent;
+                              "
+                            >
+                              <h2><i class="bi bi-plus"></i></h2>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div>
+                        <div class="row" style="color: #23293c">
+                          <div class="col-auto me-auto">
+                            <h4>Opportunities</h4>
+                          </div>
+                          <div class="col-auto">
+                            <button
+                              style="
+                                border: none;
+                                background-color: transparent;
+                              "
+                            >
+                              <h2><i class="bi bi-plus"></i></h2>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="careers-img">
+                    <img
+                      style="height: 550px"
+                      src="assate/homepage-img/careers.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="blog">
+            <div class="container">
+              <div class="blog-text">
+                <p>Blogs / News / Events</p>
+                <h1>Latest <span style="color: #ff5043">Insights</span></h1>
+              </div>
+              <div class="blog-text-img">
+                <div class="row">
+                  <div class="col">
+                    <div class="blog-text-img-s1">
+                      <h6>FEATURE | 4 min read</h6>
+                      <br />
+                      <h3>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </h3>
+                      <br />
+                      <p>December 14, 2021</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="blog-text-img-s2">
+                      <div class="row">
+                        <div class="col">
+                          <div class="blog-text-img-s2-text">
+                            <p>FEATURE | 4 min read</p>
+                            <br />
+                            <h6>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry.
+                            </h6>
+                            <br />
+                            <p>December 14, 2021</p>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            style="
+                              height: 337px;
+                              width: 285px;
+                              border-radius: 0px 24px 24px 0px;
+                            "
+                            src="assate/homepage-img/blog-img-s2.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="blog-text-img-s3">
+                      <div class="row">
+                        <div class="col">
+                          <img
+                            style="
+                              height: 337px;
+                              width: 285px;
+                              border-radius: 24px 0px 0px 24px;
+                            "
+                            src="assate/homepage-img/blog-img-s3.jpg"
+                          />
+                        </div>
+                        <div class="col">
+                          <div class="blog-text-img-s3-text">
+                            <p>FEATURE | 4 min read</p>
+                            <br />
+                            <h6>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry.
+                            </h6>
+                            <br />
+                            <p>December 14, 2021</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="our-work">
+            <div class="container">
+              <div>
+                <p>NEXT STOP</p>
+                <h1>Our <span style="color: #ff5043">Work</span></h1>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="footer">
+            <div class="">
+              <footer class="text-center text-lg-start bg-light text-muted">
+                <section
+                  class="d-flex justify-content-center justify-content-lg-between p-4"
+                >
+                  <div class="me-6 d-none d-lg-block">
+                    <br />
+                    <br />
+                    <span style="margin-left: 140px"
+                      ><img src="assate/icon-logo/Logo-Beta.svg"
+                    /></span>
+                  </div>
+                </section>
+
+                <section class="">
+                  <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Services</h6>
+                        <p>
+                          <a href="#!" class="text-reset"
+                            >Design & Innovation</a
+                          >
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset"
+                            >Digital Product Engineering</a
+                          >
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset"
+                            >Cloud Adoptation Services</a
+                          >
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Data Analytics</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset"
+                            >Digital Marketing Studio</a
+                          >
+                        </p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Industries</h6>
+                        <p>
+                          <a href="#!" class="text-reset">Blockchain</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset"
+                            >Travel & Hospitality
+                          </a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset"
+                            >Manufacturing (OEM's)
+                          </a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset"
+                            >Electric Vehicle (EV)
+                          </a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Loyalty</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Martech</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">GIS</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">eLearning</a>
+                        </p>
+                      </div>
+                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Company</h6>
+                        <p>
+                          <a href="#!" class="text-reset">About</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Work</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Insights</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Partners</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Careers </a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Contact us </a>
+                        </p>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Other</h6>
+
+                        <p>
+                          <a href="#!" class="text-reset">Code of Conduct</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Privay Notice </a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Cookie Policy </a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Terms of Use </a>
+                        </p>
+                        <br />
+                        <br />
+                        <h6 class="text-uppercase fw-bold mb-4">Follow us</h6>
+                        <div>
+                          <a href="" class="me-4 text-reset">
+                            <span style="font-size: 25px"
+                              ><i class="fab fa-linkedin"></i
+                            ></span>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <span style="font-size: 25px"
+                              ><i class="fab fa-instagram"></i
+                            ></span>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <span style="font-size: 25px"
+                              ><i class="fab fa-twitter"></i
+                            ></span>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <span style="font-size: 25px"
+                              ><i class="fab fa-facebook-f"></i
+                            ></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div
+                  class="text-left"
+                  style="
+                    background-color: #e9e9e9;
+                    padding: 30px 0px 30px 150px;
+                  "
+                >
+                  © 2021 betacraft. All Rights Reserved
+                </div>
+              </footer>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
